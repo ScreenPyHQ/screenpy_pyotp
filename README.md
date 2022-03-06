@@ -1,5 +1,7 @@
-ScreenPy
-========
+==============
+ScreenPy PyOTP
+==============
+
 ```
 TITLE CARD:
                                 "ScreenPy PyOTP"
