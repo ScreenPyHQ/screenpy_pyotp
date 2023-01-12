@@ -4,7 +4,7 @@ from setuptools import find_packages, setup
 
 requires = [
     "screenpy>=4.0.0",
-    "pyotp>=2.6.0,<2.7",
+    "pyotp>=2.6.0",
 ]
 
 repo_dir = path.abspath(path.dirname(__file__))
