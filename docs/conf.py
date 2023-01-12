@@ -24,7 +24,7 @@ autodoc_mock_imports = ["pyotp", "screenpy"]
 # -- Project information -----------------------------------------------------
 
 project = 'ScreenPy PyOTP'
-copyright = '2022, Perry Goy'
+copyright = '2022-2023, Perry Goy'
 author = 'Perry Goy'
 
 # The full version, including alpha/beta/rc tags
