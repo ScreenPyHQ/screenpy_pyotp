@@ -48,7 +48,6 @@ classifiers = [
 python = "^3.8"
 screenpy = ">=4.0.2"
 pyotp = ">=2.6.0"
-typing-extensions = ">=4.1.1"
 
 
 # convenience packages for development of screenpy_pyotp only

@@ -23,7 +23,7 @@ jobs:
           pip install
           poetry
           --user
-      - name: Build ScreenPy Requests
+      - name: Build ScreenPy PyOTP
         run: >-
           python -m
           poetry
