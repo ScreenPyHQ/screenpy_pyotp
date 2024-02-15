@@ -23,7 +23,7 @@ class AuthenticateWith2FA:
     """
 
     @staticmethod
-    def using_secret(secret: str) -> "AuthenticateWith2FA":
+    def using_secret(secret: str) -> AuthenticateWith2FA:
         """Create a TOTP instance with the given secret.
 
         Args:
@@ -34,7 +34,7 @@ class AuthenticateWith2FA:
         return AuthenticateWith2FA.using(totp)
 
     @staticmethod
-    def using(otp: pyotp.TOTP) -> "AuthenticateWith2FA":
+    def using(otp: pyotp.TOTP) -> AuthenticateWith2FA:
         """Specify an already-created TOTP instance to provide tokens."""
         return AuthenticateWith2FA(otp)
 
