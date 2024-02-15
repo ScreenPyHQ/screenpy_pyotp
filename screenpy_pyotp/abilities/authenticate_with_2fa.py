@@ -1,6 +1,4 @@
-"""
-Enable the Actor to get a generated code for two-factor authentication.
-"""
+"""Enable the Actor to get a generated code for two-factor authentication."""
 
 from __future__ import annotations
 
@@ -52,6 +50,7 @@ class AuthenticateWith2FA:
         del self.otp
 
     def __repr__(self) -> str:
+        """Represents Authentication with 2-factor."""
         return "Authenticate with 2-Factor"
 
     __str__ = __repr__
