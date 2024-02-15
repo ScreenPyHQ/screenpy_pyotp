@@ -2,6 +2,8 @@
 Enable the Actor to get a generated code for two-factor authentication.
 """
 
+from __future__ import annotations
+
 from datetime import datetime
 from time import sleep
 
