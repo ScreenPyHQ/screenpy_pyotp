@@ -1,6 +1,4 @@
-"""
-Abilities to enable interaction with PyOTP.
-"""
+"""Abilities to enable interaction with PyOTP."""
 
 from .authenticate_with_2fa import AuthenticateWith2FA
 

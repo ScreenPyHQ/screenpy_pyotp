@@ -9,9 +9,9 @@
                                       ╚══╝        ╚══╝
 """
 
-import importlib.metadata as importlib_metadata
+import importlib.metadata
 
-metadata = importlib_metadata.metadata("screenpy_pyotp")
+metadata = importlib.metadata.metadata("screenpy_pyotp")
 
 __title__ = metadata["Name"]
 __description__ = metadata["Summary"]
