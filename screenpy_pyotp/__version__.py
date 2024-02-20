@@ -1,17 +1,17 @@
 """
-╔═══╗             ╔═══╗       ╔═══╗   ╔═══╦════╦═══╗
-║╔═╗║             ║╔═╗║       ║╔═╗║   ║╔═╗║╔╗╔╗║╔═╗║
-║╚══╦══╦═╦══╦══╦═╗║╚═╝╠╗ ╔╗   ║╚═╝╠╗ ╔╣║ ║╠╝║║╚╣╚═╝║
-╚══╗║╔═╣╔╣║═╣║═╣╔╗╣╔══╣║ ║║   ║╔══╣║ ║║║ ║║ ║║ ║╔══╝
-║╚═╝║╚═╣║║║═╣║═╣║║║║  ║╚═╝║   ║║  ║╚═╝║╚═╝║ ║║ ║║
-╚═══╩══╩╝╚══╩══╩╝╚╩╝  ╚═╗╔╝   ╚╝  ╚═╗╔╩═══╝ ╚╝ ╚╝
-                      ╔═╝║        ╔═╝║
-                      ╚══╝        ╚══╝
+                ╔═══╗             ╔═══╗       ╔═══╗   ╔═══╦════╦═══╗
+                ║╔═╗║             ║╔═╗║       ║╔═╗║   ║╔═╗║╔╗╔╗║╔═╗║
+                ║╚══╦══╦═╦══╦══╦═╗║╚═╝╠╗ ╔╗   ║╚═╝╠╗ ╔╣║ ║╠╝║║╚╣╚═╝║
+                ╚══╗║╔═╣╔╣║═╣║═╣╔╗╣╔══╣║ ║║   ║╔══╣║ ║║║ ║║ ║║ ║╔══╝
+                ║╚═╝║╚═╣║║║═╣║═╣║║║║  ║╚═╝║   ║║  ║╚═╝║╚═╝║ ║║ ║║
+                ╚═══╩══╩╝╚══╩══╩╝╚╩╝  ╚═╗╔╝   ╚╝  ╚═╗╔╩═══╝ ╚╝ ╚╝
+                                      ╔═╝║        ╔═╝║
+                                      ╚══╝        ╚══╝
 """
 
-import importlib.metadata as importlib_metadata
+import importlib.metadata
 
-metadata = importlib_metadata.metadata("screenpy_pyotp")
+metadata = importlib.metadata.metadata("screenpy_pyotp")
 
 __title__ = metadata["Name"]
 __description__ = metadata["Summary"]
@@ -20,4 +20,4 @@ __version__ = metadata["Version"]
 __author__ = metadata["Author"]
 __author_email__ = metadata["Author-email"]
 __license__ = metadata["License"]
-__copyright__ = f"2019-2023 {__author__}"
+__copyright__ = f"2019-2024 {__author__}"

@@ -1,6 +1,6 @@
-"""
-Enable the Actor to get a generated code for two-factor authentication.
-"""
+"""Enable the Actor to get a generated code for two-factor authentication."""
+
+from __future__ import annotations
 
 from datetime import datetime
 from time import sleep
@@ -23,7 +23,7 @@ class AuthenticateWith2FA:
     """
 
     @staticmethod
-    def using_secret(secret: str) -> "AuthenticateWith2FA":
+    def using_secret(secret: str) -> AuthenticateWith2FA:
         """Create a TOTP instance with the given secret.
 
         Args:
@@ -34,7 +34,7 @@ class AuthenticateWith2FA:
         return AuthenticateWith2FA.using(totp)
 
     @staticmethod
-    def using(otp: pyotp.TOTP) -> "AuthenticateWith2FA":
+    def using(otp: pyotp.TOTP) -> AuthenticateWith2FA:
         """Specify an already-created TOTP instance to provide tokens."""
         return AuthenticateWith2FA(otp)
 
@@ -50,6 +50,7 @@ class AuthenticateWith2FA:
         del self.otp
 
     def __repr__(self) -> str:
+        """Represents Authentication with 2-factor."""
         return "Authenticate with 2-Factor"
 
     __str__ = __repr__
