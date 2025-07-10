@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 from time import sleep
 
 import pyotp
@@ -40,7 +40,7 @@ class AuthenticateWith2FA:
 
     def to_get_token(self) -> str:
         """Get the current two-factor token to use as a one-time password."""
-        if 30 - (datetime.now().second % 30) <= 1:
+        if 30 - (datetime.now(tz=timezone.utc).second % 30) <= 1:
             # token would expire before it can be entered, wait a bit.
             sleep(2)
         return self.otp.now()

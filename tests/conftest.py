@@ -6,6 +6,6 @@ import pyotp
 import pytest
 
 
-@pytest.fixture()
+@pytest.fixture
 def mocked_pyotp() -> mock.Mock:
     return mock.create_autospec(pyotp.TOTP, instance=True)
