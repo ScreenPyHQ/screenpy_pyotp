@@ -17,7 +17,7 @@ class TestAuthenticateWith2FA:
 
     @mock.patch("screenpy_pyotp.abilities.authenticate_with_2fa.pyotp")
     def test_using_secret(self, mocked_pyotp: mock.Mock) -> None:
-        secret = "the macguffin"
-        AuthenticateWith2FA.using_secret(secret)
+        test_str = "the macguffin"
+        AuthenticateWith2FA.using_secret(test_str)
 
-        mocked_pyotp.TOTP.assert_called_once_with(secret)
+        mocked_pyotp.TOTP.assert_called_once_with(test_str)
