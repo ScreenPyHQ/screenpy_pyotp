@@ -16,7 +16,7 @@ INT. SITEPACKAGES DIRECTORY
 
 ScreenPy PyOTP is an extension for ScreenPy, enabling interaction with PyOTP.
 
-:copyright: (c) 2022-2025 by Perry Goy.
+:copyright: (c) 2022-2026 by Perry Goy.
 :license: MIT, see LICENSE for more details.
 """
 from . import abilities
